@@ -1,10 +1,10 @@
 {
   "name": "command-line-tic-tac-toe",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple command line game of tic-tac-toe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/iyyu/command-line-tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/iyyu/command-line-tic-tac-toe#readme"
+  "homepage": "https://github.com/iyyu/command-line-tic-tac-toe#readme",
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  }
 }
