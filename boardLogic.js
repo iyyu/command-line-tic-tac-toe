@@ -24,7 +24,7 @@ const toggleBoard = (position, marker) => {
   boardPositions[position] = marker;
 };
 
-let wins = ["xxx", "ooo"];
+const wins = ["xxx", "ooo"];
 
 const checkRows = () => {
   let rowOne = boardPositions.slice(0, 3).join("");
@@ -40,7 +40,7 @@ const checkColumns = () => {
   return wins.includes(colOne) || wins.includes(colTwo) || wins.includes(colThree);
 }
 
-checkDiagonals = () => {
+const checkDiagonals = () => {
   let diagOne = [boardPositions[0], boardPositions[4], boardPositions[8]].join("");
   let diagTwo = [boardPositions[2], boardPositions[4], boardPositions[6]].join("");
   return wins.includes(diagOne) || wins.includes(diagTwo);
